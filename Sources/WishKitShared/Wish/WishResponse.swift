@@ -17,17 +17,17 @@ public struct WishResponse: Codable {
         case rejected
     }
 
-    let id: UUID
+    public let id: UUID
 
-    let userUUID: UUID
+    public let userUUID: UUID
 
-    let title: String
+    public let title: String
 
-    let description: String
+    public let description: String
 
-    let state: State
+    public let state: State
 
-    let votingUsers: [UserResponse]
+    public let votingUsers: [UserResponse]
 
     public init(
         id: UUID,

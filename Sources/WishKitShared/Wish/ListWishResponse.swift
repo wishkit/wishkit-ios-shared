@@ -8,7 +8,7 @@
 
 public struct ListWishResponse: Codable {
 
-    let list: [WishResponse]
+    public let list: [WishResponse]
 
     public init(list: [WishResponse]) {
         self.list = list

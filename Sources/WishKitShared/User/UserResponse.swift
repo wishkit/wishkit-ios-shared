@@ -10,7 +10,7 @@ import Foundation
 
 public struct UserResponse: Codable {
 
-    let uuid: UUID
+    public let uuid: UUID
 
     public init(uuid: UUID) {
         self.uuid = uuid
