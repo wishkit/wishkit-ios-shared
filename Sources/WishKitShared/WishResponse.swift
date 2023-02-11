@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct WishResponse: Codable {
+public struct WishResponse: Codable {
 
     let id: Int
 
@@ -22,7 +22,7 @@ struct WishResponse: Codable {
 
     let votingUsers: [UserResponse]
 
-    enum State: String, Codable {
+    public enum State: String, Codable {
         case pending
         case approved
         case implemented

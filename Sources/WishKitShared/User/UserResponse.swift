@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct UserResponse: Codable {
+public struct UserResponse: Codable {
 
     let uuid: UUID
 }
