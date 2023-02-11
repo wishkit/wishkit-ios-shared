@@ -3,9 +3,6 @@ import PackageDescription
 
 let package = Package(
     name: "wishkit-ios-shared",
-    platforms: [
-        .macOS(.v10_15),
-    ],
     products: [
         .library(name: "WishKitShared", targets: ["WishKitShared"])
     ],
