@@ -17,7 +17,7 @@ public struct WishResponse: Codable {
         case rejected
     }
 
-    let id: Int
+    let id: UUID
 
     let userUUID: UUID
 
@@ -30,7 +30,7 @@ public struct WishResponse: Codable {
     let votingUsers: [UserResponse]
 
     public init(
-        id: Int,
+        id: UUID,
         userUUID: UUID,
         title: String,
         description: String,
