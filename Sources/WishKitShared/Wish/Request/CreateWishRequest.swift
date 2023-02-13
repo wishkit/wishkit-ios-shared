@@ -8,11 +8,11 @@
 
 public struct CreateWishRequest: Codable {
 
-    let title: String
+    public let title: String
 
-    var description: String?
+    public var description: String?
 
-    var state: WishState
+    public var state: WishState
 
     public init(title: String, description: String? = nil, state: WishState = .pending) {
         self.title = title
