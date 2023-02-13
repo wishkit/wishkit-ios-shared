@@ -10,13 +10,6 @@ import Foundation
 
 public struct WishResponse: Codable {
 
-    public enum State: String, Codable {
-        case pending
-        case approved
-        case implemented
-        case rejected
-    }
-
     public let id: UUID
 
     public let userUUID: UUID
@@ -25,7 +18,7 @@ public struct WishResponse: Codable {
 
     public let description: String
 
-    public let state: State
+    public let state: WishState
 
     public let votingUsers: [UserResponse]
 
@@ -34,7 +27,7 @@ public struct WishResponse: Codable {
         userUUID: UUID,
         title: String,
         description: String,
-        state: State,
+        state: WishState,
         votingUsers: [UserResponse]
     ) {
         self.id = id
