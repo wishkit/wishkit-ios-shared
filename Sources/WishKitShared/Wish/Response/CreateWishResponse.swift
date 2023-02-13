@@ -10,11 +10,11 @@ public struct CreateWishResponse: Codable {
 
     public let title: String
 
-    public var description: String?
+    public var description: String
 
     public var state: WishState
 
-    public init(title: String, description: String? = nil, state: WishState) {
+    public init(title: String, description: String, state: WishState) {
         self.title = title
         self.description = description
         self.state = state
