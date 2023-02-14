@@ -10,7 +10,7 @@ import Foundation
 
 public struct VoteWishRequest: Codable {
 
-    let wishId: UUID
+    public let wishId: UUID
 
     public init(wishId: UUID) {
         self.wishId = wishId
