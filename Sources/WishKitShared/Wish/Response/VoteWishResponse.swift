@@ -12,7 +12,10 @@ public struct VoteWishResponse: Codable {
 
     public let wishId: UUID
 
-    public init(wishId: UUID) {
+    public let votingUsers: [UserResponse]
+
+    public init(wishId: UUID, votingUsers: [UserResponse]) {
         self.wishId = wishId
+        self.votingUsers = votingUsers
     }
 }
