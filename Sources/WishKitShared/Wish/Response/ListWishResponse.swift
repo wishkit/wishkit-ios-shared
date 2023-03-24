@@ -10,7 +10,10 @@ public struct ListWishResponse: Codable {
 
     public let list: [WishResponse]
 
-    public init(list: [WishResponse]) {
+    public let shouldShowWatermark: Bool
+
+    public init(list: [WishResponse], shouldShowWatermark: Bool) {
         self.list = list
+        self.shouldShowWatermark = shouldShowWatermark
     }
 }
