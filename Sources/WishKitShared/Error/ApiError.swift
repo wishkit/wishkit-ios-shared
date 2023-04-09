@@ -20,6 +20,8 @@ public struct ApiError: Error, Codable {
         case unknown
         case couldNotCreateRequest
         case couldNotDecodeBackendResponse
+        case missingApiHeaderKey
+        case missingUUIDHeaderKey
 
         public var description: String {
             switch self {
@@ -33,6 +35,10 @@ public struct ApiError: Error, Codable {
                 return "Could not create request."
             case .couldNotDecodeBackendResponse:
                 return "Could not decode backend response."
+            case .missingApiHeaderKey:
+                return "Missing api header key."
+            case .missingUUIDHeaderKey:
+                return "Missing user header key."
             }
         }
     }
