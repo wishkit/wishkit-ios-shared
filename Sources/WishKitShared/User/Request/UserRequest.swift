@@ -10,15 +10,15 @@ import Foundation
 
 public struct UserRequest: Codable {
 
-    let customID: String?
+    public let customID: String?
 
-    let email: String?
+    public let email: String?
 
-    let name: String?
+    public let name: String?
 
-    let paymentFrequency: PaymentFrequency?
+    public let paymentFrequency: PaymentFrequency?
 
-    let paymentAmount: Int?
+    public let paymentAmount: Int?
 
     public init(
         customID: String? = nil,
