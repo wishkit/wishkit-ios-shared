@@ -16,21 +16,17 @@ public struct UserRequest: Codable {
 
     public let name: String?
 
-    public let paymentFrequency: PaymentFrequency?
-
-    public let paymentAmount: Int?
+    public let paymentPerMonth: Int?
 
     public init(
         customID: String? = nil,
         email: String? = nil,
         name: String? = nil,
-        paymentFrequency: PaymentFrequency? = nil,
-        paymentAmount: Int? = nil
+        paymentPerMonth: Int? = nil
     ) {
         self.customID = customID
         self.email = email
         self.name = name
-        self.paymentFrequency = paymentFrequency
-        self.paymentAmount = paymentAmount
+        self.paymentPerMonth = paymentPerMonth
     }
 }
