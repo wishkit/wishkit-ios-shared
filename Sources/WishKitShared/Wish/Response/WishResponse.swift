@@ -22,13 +22,16 @@ public struct WishResponse: Codable {
 
     public let votingUsers: [UserResponse]
 
+    public let commentList: [CommentResponse]
+
     public init(
         id: UUID,
         userUUID: UUID,
         title: String,
         description: String,
         state: WishState,
-        votingUsers: [UserResponse]
+        votingUsers: [UserResponse],
+        commentList: [CommentResponse]
     ) {
         self.id = id
         self.userUUID = userUUID
@@ -36,5 +39,6 @@ public struct WishResponse: Codable {
         self.description = description
         self.state = state
         self.votingUsers = votingUsers
+        self.commentList = commentList
     }
 }
