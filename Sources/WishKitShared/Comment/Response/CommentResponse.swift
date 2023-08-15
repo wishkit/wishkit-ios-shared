@@ -10,6 +10,8 @@ import Foundation
 
 public struct CommentResponse: Codable {
 
+    public let id: UUID
+
     public let userId: UUID
 
     public let description: String
@@ -18,7 +20,8 @@ public struct CommentResponse: Codable {
 
     public let isAdmin: Bool
 
-    public init(userId: UUID, description: String, createdAt: Date, isAdmin: Bool) {
+    public init(id: UUID, userId: UUID, description: String, createdAt: Date, isAdmin: Bool) {
+        self.id = id
         self.userId = userId
         self.description = description
         self.createdAt = createdAt
