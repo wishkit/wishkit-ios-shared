@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct VoteWishRequest: Codable {
+public struct VoteWishRequest: Equatable, Codable {
 
     public let wishId: UUID
 

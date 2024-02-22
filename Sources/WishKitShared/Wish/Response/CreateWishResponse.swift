@@ -6,7 +6,7 @@
 //  Copyright © 2023 Martin Lasek. All rights reserved.
 //
 
-public struct CreateWishResponse: Codable {
+public struct CreateWishResponse: Equatable, Codable {
 
     public let title: String
 

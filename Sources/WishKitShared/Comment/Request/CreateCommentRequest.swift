@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct CreateCommentRequest: Codable {
+public struct CreateCommentRequest: Equatable, Codable {
 
     public let wishId: UUID
 
