@@ -12,7 +12,7 @@ public struct CreatePrivateFeedbackResponse: Codable {
 
     public let description: String
 
-    init(email: String? = nil, description: String) {
+    public init(email: String? = nil, description: String) {
         self.email = email
         self.description = description
     }
