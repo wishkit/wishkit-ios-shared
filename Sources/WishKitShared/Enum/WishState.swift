@@ -7,8 +7,13 @@
 //
 
 public enum WishState: String, Codable, CaseIterable {
-    case pending
     case approved
     case implemented
+
+    case pending
+    case inReview
+    case planned
+    case inProgress
+    case completed
     case rejected
 }
