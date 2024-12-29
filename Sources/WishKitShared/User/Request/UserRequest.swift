@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct UserRequest: Codable {
+public struct UserRequest: Equatable, Codable {
 
     public let customID: String?
 

@@ -6,7 +6,7 @@
 //  Copyright © 2023 Martin Lasek. All rights reserved.
 //
 
-public struct ApiError: Error, Codable {
+public struct ApiError: Equatable, Error, Codable {
 
     public let reason: Reason
 
@@ -14,7 +14,7 @@ public struct ApiError: Error, Codable {
         self.reason = reason
     }
 
-    public enum Reason: String, Codable {
+    public enum Reason: String, Equatable, Codable {
         case requestResultedInError
         case wrongBearerToken
         case unknown

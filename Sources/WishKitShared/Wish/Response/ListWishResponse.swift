@@ -6,7 +6,7 @@
 //  Copyright © 2023 Martin Lasek. All rights reserved.
 //
 
-public struct ListWishResponse: Codable {
+public struct ListWishResponse: Equatable, Codable {
 
     public let list: [WishResponse]
 

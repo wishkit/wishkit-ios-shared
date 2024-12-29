@@ -6,7 +6,7 @@
 //  Copyright © 2023 Martin Lasek. All rights reserved.
 //
 
-public enum WishState: String, Codable, CaseIterable {
+public enum WishState: String, Equatable, Codable, CaseIterable {
     case approved
     case implemented
 
